@@ -1,24 +1,3 @@
-# EX 5
-import random
-
-random_list1 = random.sample(range(100), 10)
-random_list2 = random.sample(range(100), 15)
-
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-
-common_list = []
-
-print(random_list1,"\n",random_list2, "\n")
-
-for termOf1 in random_list1:
-    for termOf2 in random_list2:
-        if termOf1 == termOf2:
-            if termOf1 in common_list:
-                continue
-            common_list.append(termOf1)
-print(common_list)  
-
 # EX 6
 string = input("Enter a string: ")
 string_reversed = string[::-1]
